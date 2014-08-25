@@ -1,4 +1,4 @@
-package com.sow.hemato.mvc;
+package com.sow.hemato.mvc.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

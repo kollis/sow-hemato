@@ -8,7 +8,7 @@
 This is sample.jsp
 
 <div>
-	<a href='<c:url value="../j_spring_security_logout"/>'>Logout</a>
+	<a href='<c:url value="j_spring_security_logout"/>'>Logout</a>
 </div>
 
 </body>

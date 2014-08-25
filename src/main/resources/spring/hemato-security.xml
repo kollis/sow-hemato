@@ -16,6 +16,7 @@
     <form-login login-page="/login.jsp" authentication-failure-url="/login.jsp?login_error=1"/>
     	<intercept-url pattern="/login.jsp" access="permitAll" />
     	<intercept-url pattern="/index.jsp" access="permitAll" />
+        <intercept-url pattern="/*" access="isAuthenticated()" />     
         <intercept-url pattern="/*" access="isAuthenticated()" />       
         <form-login />
         <logout logout-success-url="/index.jsp" />

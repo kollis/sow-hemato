@@ -1,4 +1,4 @@
-package com.sow.hemato.mvc;
+package com.sow.hemato.mvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class SampleController {
 	
-	@RequestMapping("/mvc/sample")
+	@RequestMapping("/sample")
 	public String printWelcome(ModelMap model) {
 		
 		System.out.println("\n*****in printWelcome of SampleController*******");
