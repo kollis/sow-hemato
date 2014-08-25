@@ -11,6 +11,23 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd" >
         
     <context:component-scan base-package="com.sow.hemato.mvc" />   
+    
+    
+  <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"> 
+    	<property name="alwaysUseFullPath" value="true"/> 
+    	<!-- other properties --> 
+  </bean> 
+  
+  <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"> 
+    <property name="alwaysUseFullPath" value="true"/> 
+  </bean> 
+	
+<!-- 	
+ <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping"> 
+     <property name="alwaysUseFullPath" value="true"/> 
+  </bean>  	
+ -->
+ 
       
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class SampleController {
 	
-	@RequestMapping("/sample.htm")
+	@RequestMapping("/mvc/sample")
 	public String printWelcome(ModelMap model) {
 		
 		System.out.println("\n*****in printWelcome of SampleController*******");

@@ -33,7 +33,7 @@
  
 	<servlet-mapping>
 		<servlet-name>hemato-mvc</servlet-name>
-		<url-pattern>*.htm</url-pattern>
+		<url-pattern>/mvc/*</url-pattern>
 	</servlet-mapping>
  
 	<listener>
