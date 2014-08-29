@@ -16,4 +16,12 @@ public class SampleController {
 		return "sample";
 	}
 	
+	@RequestMapping("/sample1")
+	public String printWelcome1(ModelMap model) {
+		
+		System.out.println("\n*****in printWelcome1 of SampleController*******");
+
+		return "sample1";
+	}
+	
 }
