@@ -25,25 +25,22 @@
 <div id="container" style="width:100%">
 
 	<div id="header" style="width:100%;background-color:#FFA500;">
-		<h1 style="margin-bottom:0;text-align: center">Welcome to Hemato</h1>
+	 	<h1 style="margin-bottom:0;text-align: center">Welcome to Hemato</h1>
 		
 		<div id="details">
 			<p style="margin-top:0px;margin-bottom:0px;"> ${user.name}; Member Number:${user.memberNumber} </p>
-			<p style="margin-top:0px;margin-bottom:0px;"> ${user.street},${user.city}, ${user.zipcode} </p><br/>
-			<p style="margin-top:0px;margin-bottom:0px;"> <a href='<c:url value="j_spring_security_logout"/>'>Logout</a> </p>
-		</div>
-		
+			<p style="margin-top:0px;margin-bottom:0px;"> ${user.street},${user.city}, ${user.zipcode} </p>
+			<p style="margin-top:0px;margin-bottom:0px;"> <a href='<c:url value="j_spring_security_logout"/>'>Logout</a> </p><br/>
+	  </div>	
 	</div>
 
-	<div id="menu" style="background-color:#FFD700;height:500px;width:10%;float:left;">
-		<p><a href="#/view1">Borrow a book</a></p>
-		<p><a href="#/view2">Request a pass</a></p>
-		<p><a href="sample1.htm">Change details</a></p>
-		<p>Library Events</p>
+	<div id="menu" style="background-color:#FFD700;height:600px;width:10%;float:left;">
+		<p><a href="#/view1">Register Donor</a></p>
+		<p><a href="#/view2">Display Supplies</a></p>
+		<p><a href="#/view3">Find Match</a></p>
 	</div>
 
-	<div id="content" style="background-color:#EEEEEE;height:500px;width:90%;float:left;">
-		Content goes here
+	<div id="content" style="background-color:#EEEEEE;height:600px;width:90%;float:left;">
 		 <div ng-view></div>
 	</div>
 
