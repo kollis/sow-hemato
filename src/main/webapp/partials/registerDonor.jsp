@@ -27,9 +27,7 @@
  
      <div class="top30">
      
-     		
-
-       <form class="form-horizontal">
+       <form class="form-horizontal" data-ng-submit='submitRegistration()'>
        
            <div class="form-group">
             <div class="col-xs-8">
@@ -40,14 +38,14 @@
         <div class="form-group">
             <label for="firstName" class="control-label col-xs-2">First Name</label>
             <div class="col-xs-5">
-                <input type="text" class="form-control" id="firstName">
+                <input type="text" class="form-control" id="firstName" data-ng-model="data.donorDetails.firstName">
             </div>
         </div>
         
          <div class="form-group">
             <label for="lastName" class="control-label col-xs-2">Last Name</label>
             <div class="col-xs-5">
-                <input type="text" class="form-control" id="lastName">
+                <input type="text" class="form-control" id="lastName" data-ng-model="data.donorDetails.lastName">
             </div>
         </div>
         
@@ -55,10 +53,10 @@
          	<label for="gender" class="control-label col-xs-2">Gender</label>
 	        <div>
 			   <label class="checkbox-inline">
-			      <input type="radio" id="gender1" value="male"> Male
+			      <input type="radio" id="gender1" value="male" data-ng-model="data.donorDetails.gender"> Male
 			   </label>
 			   <label class="checkbox-inline">
-			      <input type="radio" id="gender2" value="female"> Female
+			      <input type="radio" id="gender2" value="female" data-ng-model="data.donorDetails.gender"> Female
 			   </label>
 			</div>
 		 </div>
@@ -66,7 +64,7 @@
         <div class="form-group">
             <label for="bloodGroup" class="control-label col-xs-2">Blood Group</label>
             <div class="col-xs-2">
-                <select class="form-control">
+                <select class="form-control" data-ng-model="data.donorDetails.bloodGroup">
                 	 <option value="">Select</option>
 			         <option value="A+">A+</option>
 			         <option value="A-">A-</option>
@@ -81,35 +79,35 @@
        <div class="form-group">
             <label for="mobileNumber" class="control-label col-xs-2">Mobile Phone</label>
             <div class="col-xs-5">
-                <input type="text" class="form-control" id="mobileNumber">
+                <input type="text" class="form-control" id="mobileNumber" data-ng-model="data.donorDetails.mobileNumber">
             </div>
        </div>
        
         <div class="form-group">
             <label for="email" class="control-label col-xs-2">Email</label>
             <div class="col-xs-5">
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email" data-ng-model="data.donorDetails.email">
             </div>
         </div>
         
          <div class="form-group">
             <label for="street" class="control-label col-xs-2">Street</label>
             <div class="col-xs-5">
-                <input type="text" class="form-control" id="street">
+                <input type="text" class="form-control" id="street" data-ng-model="data.donorDetails.street">
             </div>
         </div>
         
         <div class="form-group">
             <label for="city" class="control-label col-xs-2">City</label>
             <div class="col-xs-5">
-                <input type="text" class="form-control" id="city">
+                <input type="text" class="form-control" id="city" data-ng-model="data.donorDetails.city">
             </div>
         </div>
        
        <div class="form-group">
             <label for="zipcode" class="control-label col-xs-2">Zipcode</label>
             <div class="col-xs-5">
-                <input type="text" class="form-control" id="zipcode">
+                <input type="text" class="form-control" id="zipcode" data-ng-model="data.donorDetails.zipcode">
             </div>
         </div>
        
