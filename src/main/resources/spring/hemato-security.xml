@@ -5,23 +5,25 @@
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 	http://www.springframework.org/schema/security
 	http://www.springframework.org/schema/security/spring-security-3.1.xsd">
- 
+	
+	
 	<global-method-security pre-post-annotations="enabled">
         <!-- AspectJ pointcut expression that locates our "post" method and applies security that way
         <protect-pointcut expression="execution(* bigbank.*Service.post*(..))" access="ROLE_TELLER"/>
         -->
     </global-method-security>
-
+    
     <http use-expressions="true" disable-url-rewriting="true" access-denied-page="/accessDenied.jsp">
     <form-login login-page="/login.jsp" authentication-failure-url="/login.jsp?login_error=1"/>
-    	<intercept-url pattern="/login.jsp" access="permitAll" />
-    	<intercept-url pattern="/index.jsp" access="permitAll" />
-        <intercept-url pattern="/*" access="isAuthenticated()" />     
-        <intercept-url pattern="/*" access="isAuthenticated()" />       
-        <form-login />
-        <logout logout-success-url="/index.jsp" />
-        <remember-me />
-        
+	    <intercept-url pattern="/login.jsp" access="permitAll" />
+	    <intercept-url pattern="/index.jsp" access="permitAll" />
+	    <intercept-url pattern="/*" access="isAuthenticated()" />     
+	    <intercept-url pattern="/*" access="isAuthenticated()" />
+	    <intercept-url pattern="/api/*" access="isAuthenticated()" />         
+    <form-login />
+    <logout logout-success-url="/index.jsp" />
+    <remember-me />
+            
         <!--   <intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')" />
         <intercept-url pattern="/home.jsp" access="permitAll" /> -->
         
