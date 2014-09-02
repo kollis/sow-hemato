@@ -6,13 +6,13 @@ angular.module('hematoApp.controllers')
  $scope.suppliesReport = null;
 	  
 	  $http({
-          url: 'TestServlet',
+          url: 'api/inventory',
           method: "POST"
       }).success(function(data, status, headers, config) {
     	  $scope.suppliesReport = data;
-          console.debug("in success of TestServlet in MyCtrl4:", data);
+          console.debug("in success of inventory service:", data);
       }).error(function(data, status, headers, config) {
-    	  console.debug("in failure of TestServlet in MyCtrl4");
+    	  console.debug("in failure of inventory service");
       });
 
   }]);

@@ -27,7 +27,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr data-ng-repeat='row in suppliesReport.supplyDetail'>
+            <tr data-ng-repeat='row in suppliesReport'>
   				<td>{{row.id}}</td>
   				<td>{{row.group}}</td>
   				<td>{{row.liters}}</td>
