@@ -53,6 +53,7 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
+   <script src="js/jquery.js"></script>
   <script src="js/angular.js"></script>
   <script src="js/angular-route.js"></script>
   <script src="js/app.js"></script>

@@ -19,7 +19,7 @@
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th>Row</th>
+                <th>Id</th>
                 <th>Group</th>
                 <th>Liters</th>
                 <th>Blood Bank</th>
@@ -28,9 +28,9 @@
         </thead>
         <tbody>
             <tr data-ng-repeat='row in suppliesReport'>
-  				<td>{{row.id}}</td>
+  				<td>{{row._id}}</td>
   				<td>{{row.group}}</td>
-  				<td>{{row.liters}}</td>
+  				<td>{{row.quantity}}</td>
   				<td>{{row.bloodBank}}</td>
   				<td>{{row.city}}</td>					
 			</tr>

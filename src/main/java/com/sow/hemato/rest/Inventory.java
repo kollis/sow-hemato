@@ -15,14 +15,32 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Component;
 
 import com.sow.hemato.mvc.data.InventoryDetail;
+import com.sow.hemato.service.InventoryService;
+import com.sow.hemato.service.InventoryServiceImpl;
 
 @Component
 @Path("/inventory")
-public class InventoryService {
+public class Inventory {
 
-    private static final Log LOG = LogFactory.getLog(InventoryService.class);
-
+    private static final Log LOG = LogFactory.getLog(Inventory.class);
+    
     @POST
+    public String getInventory() throws Exception {
+    	LOG.debug("entered getInventory method of InventoryService");
+    	
+    	
+    	
+    	InventoryService inventoryService = new InventoryServiceImpl();
+    	
+    	String data = inventoryService.getInventory();
+    	
+    	System.out.println("\n************data:" + data + ":");
+    	
+    		
+        return data;
+    }
+
+   /* @POST
     @Produces(MediaType.APPLICATION_JSON)
     public List<InventoryDetail> getInventory() throws Exception {
     	LOG.debug("entered getInventory method of InventoryService");
@@ -52,7 +70,15 @@ public class InventoryService {
     	inventoryDetail.setBloodBank("NTR");
     	inventoryDetail.setCity("Hyderabad");
     	inventoryDetails.add(inventoryDetail);
+    	
+    	
+    	InventoryService inventoryService = new InventoryServiceImpl();
+    	
+    	String data = inventoryService.getInventory();
+    	
+    	System.out.println("\n************data:" + data + ":");
+    	
     		
         return inventoryDetails;
-    }
+    } */
 }

@@ -1,4 +1,4 @@
-package com.sow.hemato.mvc.data;
+package com.sow.hemato.service;
 
 public class DonorDetails {
 	

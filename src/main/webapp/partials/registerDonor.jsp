@@ -29,6 +29,12 @@
      
        <form class="form-horizontal" data-ng-submit='submitRegistration()'>
        
+       	<div class="form-group">
+            <div class="col-xs-8">
+                <h4 id="donorRegistrationSuccessMsg" class="text-center" style="color:green;display:none;">User successfully registered</h4>
+            </div>
+         </div>
+       
            <div class="form-group">
             <div class="col-xs-8">
                 <h4 class="text-center">Please enter donor details</h4>
