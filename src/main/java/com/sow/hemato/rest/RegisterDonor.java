@@ -6,8 +6,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.sow.hemato.service.DonorDetails;
@@ -18,7 +18,7 @@ import com.sow.hemato.service.DonorServiceImpl;
 @Path("/registerDonor")
 public class RegisterDonor {
 
-    private static final Log LOG = LogFactory.getLog(RegisterDonor.class);
+	 private static final Logger LOG = LoggerFactory.getLogger(RegisterDonor.class);
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)

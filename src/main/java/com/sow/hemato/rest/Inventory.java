@@ -12,6 +12,8 @@ import javax.ws.rs.core.MediaType;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.sow.hemato.mvc.data.InventoryDetail;
@@ -22,7 +24,7 @@ import com.sow.hemato.service.InventoryServiceImpl;
 @Path("/inventory")
 public class Inventory {
 
-    private static final Log LOG = LogFactory.getLog(Inventory.class);
+    private static final Logger LOG = LoggerFactory.getLogger(Inventory.class);
     
     @POST
     public String getInventory() throws Exception {
