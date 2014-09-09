@@ -1,5 +1,7 @@
 package com.sow.hemato.service;
 
+import org.springframework.stereotype.Service;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mongodb.DB;
@@ -8,6 +10,7 @@ import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.util.JSON;
 
+@Service
 public class DonorServiceImpl implements DonorService {
 
 	@Override

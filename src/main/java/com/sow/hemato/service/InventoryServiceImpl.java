@@ -1,10 +1,13 @@
 package com.sow.hemato.service;
 
+import org.springframework.stereotype.Service;
+
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 
+@Service
 public class InventoryServiceImpl implements InventoryService {
 
 	@Override
@@ -25,7 +28,7 @@ public class InventoryServiceImpl implements InventoryService {
 				inventoryData.append(cursor.next() + ",");
 			  // System.out.println(cursor.next());
 			}
-			
+					
 			inventoryData.append("]");
 			inventoryDataStr = inventoryData.toString().replaceFirst("(.*),", "$1"); //remove the last ,
 					

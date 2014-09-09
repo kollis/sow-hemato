@@ -8,10 +8,9 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context-3.0.xsd
         http://www.springframework.org/schema/mvc
-        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd" >
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd" >  
         
-    <context:component-scan base-package="com.sow.hemato.mvc" />   
-    
+   <context:component-scan base-package="com.sow.hemato.mvc" />      
     
   <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"> 
     	<property name="alwaysUseFullPath" value="true"/> 

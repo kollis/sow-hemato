@@ -4,6 +4,7 @@ package com.sow.hemato.rest;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -23,16 +24,15 @@ import com.sow.hemato.service.InventoryServiceImpl;
 @Component
 @Path("/inventory")
 public class Inventory {
+	
+	@Resource
+	private InventoryService inventoryService;
 
     private static final Logger LOG = LoggerFactory.getLogger(Inventory.class);
     
     @POST
     public String getInventory() throws Exception {
     	LOG.debug("entered getInventory method of InventoryService");
-    	
-    	
-    	
-    	InventoryService inventoryService = new InventoryServiceImpl();
     	
     	String data = inventoryService.getInventory();
     	
