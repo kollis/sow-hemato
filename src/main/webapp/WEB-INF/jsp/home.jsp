@@ -11,6 +11,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Hemato</title>
+  <link rel="stylesheet" href="css/jquery-ui/jquery-ui.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/app.css"/>
   <script src="js/modernizr-2.6.2.js"></script>
@@ -36,6 +37,7 @@
 
 	<div id="menu" style="background-color:#FFD700;height:600px;width:10%;float:left;">
 		<p><a href="#/registerDonor">Register Donor</a></p>
+		<p><a href="#/enterDonation">Enter Donation</a></p>
 		<p><a href="#/displaySupplies">Display Supplies</a></p>
 		<p><a href="#/view3">Find Match</a></p>
 	</div>
@@ -53,12 +55,14 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-   <script src="js/jquery.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
   <script src="js/angular.js"></script>
   <script src="js/angular-route.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/registerDonorController.js"></script>
+  <script src="js/enterDonationController.js"></script>
   <script src="js/displaySuppliesController.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
