@@ -22,6 +22,7 @@
 .top10 { margin-top:10px; }
 .top30 { margin-top:30px; }
 .bottom10 { margin-bottom:10px; }
+.error {color:red;}
 
 </style>
 
@@ -54,14 +55,16 @@
         <div class="form-group">
             <label for="mobileNumber" class="control-label col-xs-2">Phone Number</label>
             <div class="col-xs-5">
-                <input type="text" class="form-control" id="mobileNumber" data-ng-model="data.donationDetails.mobileNumber">
+                <input type="text" class="form-control" id="mobileNumber" data-ui-mask="999-999-9999" data-ng-model="data.donationDetails.mobileNumber">
+                <p class="error" data-ng-show="data.donationDetails.errors.mobileNumber == 1">Please enter a valid mobile number</p>
             </div>
         </div>
         
          <div class="form-group">
             <label for="donationAmount" class="control-label col-xs-2">Amount of Blood Donated</label>
             <div class="col-xs-5">
-                <input type="text" class="form-control" id="donationAmount" data-ng-model="data.donationDetails.amount">
+                <input type="text" class="form-control" id="donationAmount" data-ui-mask="9.999" data-ng-model="data.donationDetails.amount">
+                <p class="error" data-ng-show="data.donationDetails.errors.amount == 1">Please enter a valid Amount</p>
             </div>
         </div>
         

@@ -59,6 +59,7 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/angular.js"></script>
   <script src="js/angular-route.js"></script>
+  <script src="js/ui-utils.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/registerDonorController.js"></script>

@@ -4,6 +4,7 @@
 // Declare app level module which depends on filters, and services
 angular.module('hematoApp', [
   'ngRoute',
+  'ui.utils',
   'hematoApp.filters',
   'hematoApp.services',
   'hematoApp.directives',

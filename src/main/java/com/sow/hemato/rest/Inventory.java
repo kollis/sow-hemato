@@ -37,7 +37,6 @@ public class Inventory {
     	String data = inventoryService.getInventory();
     	
     	System.out.println("\n************data:" + data + ":");
-    	
     		
         return data;
     }
