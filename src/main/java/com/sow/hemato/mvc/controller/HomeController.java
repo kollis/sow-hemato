@@ -17,7 +17,7 @@ public class HomeController {
 	@RequestMapping("/home")
 	public ModelAndView home(ModelMap model) {
 		
-		System.out.println("\n*****in home of HomeController*******");
+		System.out.println("\n*****in home of HomeController test*******");
 		
 		
 		UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
